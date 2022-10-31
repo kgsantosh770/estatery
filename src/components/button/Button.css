@@ -1,0 +1,20 @@
+.btn {
+    padding: 10px 25px;
+    border-radius: 8px;
+    font-family: var(--base-font-family);
+    font-weight: 600;
+    font-size: medium;
+    border: 2px solid var(--gray-color);
+    background: transparent;
+    color: var(--primary-color);
+}
+
+.btn.large {
+    padding: 15px 35px;
+}
+
+.btn.fill {
+    border: 2px solid var(--primary-color);
+    background-color: var(--primary-color);
+    color: var(--white-text);
+}
