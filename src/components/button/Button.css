@@ -1,5 +1,5 @@
 .btn {
-    padding: 10px 25px;
+    padding: 9px 24px;
     border-radius: 8px;
     font-family: var(--base-font-family);
     font-weight: 600;
@@ -7,6 +7,7 @@
     border: 2px solid var(--gray-color);
     background: transparent;
     color: var(--primary-color);
+    cursor: pointer;
 }
 
 .btn.large {

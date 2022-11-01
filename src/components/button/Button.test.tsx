@@ -7,7 +7,7 @@ describe('Button', () => {
     const onClick = () => 'testing';
     debug();
 
-    it('renders correctly', () =>{
+    it('component renders', () =>{
         render(<Button buttonText="Testing" onClick={onClick}/>)
         const buttonText = screen.getByText("Testing");
         expect(buttonText).toBeInTheDocument;

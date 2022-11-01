@@ -1,6 +1,10 @@
 :root {
   --primary-color: #7065EF;
+  --light-primary-color: #eae6fd;
+  --light-primary-background: #F8F7FD;
   --gray-color: #D4D4D8;
+  --black-color: #000000;
+  --dark-gray-text: #5b5b5f;
   --gray-text: #A1A1AA;
   --white-text: #ffffff;
   --base-font-family: 'Inter', sans-serif;
@@ -10,4 +14,9 @@ body {
   margin: 0;
   font-family: var(--base-font-family);
   font-size: medium;
+  background-color: var(--light-primary-background);
+}
+
+.page {
+  padding: 3% 11%;
 }
