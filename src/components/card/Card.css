@@ -1,0 +1,121 @@
+.card{
+    position: relative;
+    width: 320px;
+    border-radius: 0.5rem;
+    background-color: var(--white-color);
+}
+
+.card-details {
+    position: relative;
+    padding: 1.5rem 1.25rem 1.25rem;
+}
+
+.popular-tag{
+    text-transform: uppercase;
+    font-size: small;
+    display: flex;
+    position: absolute;
+    left: -2%;
+    top: -10%;
+    background-color: var(--primary-color);
+    width: max-content;
+    padding: 5px 15px 2px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: var(--white-text);
+}
+
+.popular-tag::before{
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 0;
+    left: 0;
+    top: 100%;
+    border-left: 7px solid transparent;
+    border-top: 11px solid var(--primary-color);
+}
+
+.popular-tag img {
+    width: 15px;
+    height: 18px;
+    margin-right: 5px;
+}
+
+.favorite{
+    position: absolute;
+    right: 1.25rem;
+    border-radius: 9999px;
+    border: 1px solid var(--gray-color);
+    padding: 7px;
+    height: 16px;
+    width: 16px;
+}
+
+.favorite img{
+    width: 16px;
+}
+
+.card-img img{
+    width: 320px;
+    object-fit: cover;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+.price {
+    color: var(--gray-text);
+    font-size: small;
+}
+
+.price .amount{
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: large;
+    margin-right: 1px;
+}
+
+.name {
+    font-size: x-large;
+    font-weight: bold;
+    margin-top: 7px;
+}
+
+.address {
+    margin-top: 7px;
+    color: var(--gray-text);
+    font-size: small;
+}
+
+.ammenities {
+    border-top: 1px solid var(--gray-color);
+    margin-top: 13px;
+    padding: 8px 15px 0 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--gray-text);
+}
+
+.ammenity {
+    display: flex;
+    align-items: center;
+}
+
+.ammenity img {
+    height: 17px;
+    width: 15px;
+    margin-right: 6px;
+}
+
+.ammenity-name{
+    position: relative;
+    font-size: small;
+}
+
+.ammenity sup {
+    position: absolute;
+    top: -14%;
+}
+

@@ -1,0 +1,7 @@
+.group {
+    display: grid;
+    grid-template-columns: repeat(3, 320px);
+    justify-content: space-between;
+    row-gap: 1.5rem;
+    margin-top: 3rem;
+}

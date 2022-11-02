@@ -1,5 +1,6 @@
 import Button from "../button/Button";
 import DownArrow from "../../assets/images/arrow-down.png";
+import CalendarIcon from '../../assets/images/calendar.png';
 import "./FilterBar.css";
 
 export default function FilterBar() {
@@ -13,7 +14,7 @@ export default function FilterBar() {
             <div className="filter-title">When</div>
             <span className="filter-value">Select Move-in Date</span>
             <span className="filter-dropdown">
-                <img src={DownArrow} alt="filter-dropdown" aria-label="filter-dropdown" />
+                <img src={CalendarIcon} alt="filter-dropdown" aria-label="filter-dropdown" />
             </span>
         </div>
         <div className="filter">
