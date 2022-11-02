@@ -1,13 +1,16 @@
+import { useState } from "react";
+
 import HouseImage from "../../assets/images/house1.jpg";
 import BedIcon from "../../assets/images/bed.png";
 import BathroomIcon from "../../assets/images/bathroom.png";
 import SquareMeterIcon from "../../assets/images/square-meter.png";
 import Favorite from "../../assets/images/favorite.png";
+import FavoriteFilled from "../../assets/images/favorite-filled.png";
 import Sparkle from "../../assets/images/sparkle.png";
-
 import "./Card.css";
 
 export default function Card() {
+    const [favorite, setFavorite] = useState(false);
     return (
         <div className="card">
             <div className="card-img">
@@ -18,10 +21,16 @@ export default function Card() {
                     <img src={Sparkle} alt="sparkle" aria-label="sparkle" />
                     Popular
                 </div>
-                <div className="favorite">
-                    <img src={Favorite} alt="favorite" aria-label="favorite" />
+                <button className="favorite" onClick={()=>{setFavorite(!favorite)}}>
+                    {favorite ? 
+                        <img src={FavoriteFilled} alt="favorite" aria-label="favorite" /> :
+                        <img src={Favorite} alt="favorite" aria-label="favorite" />
+                    }
+                </button>
+                <div className="price">
+                    <span className="amount">$2,095</span>
+                    <span className="period">/month</span>
                 </div>
-                <div className="price"><span className="amount">$2,095</span>/month</div>
                 <div className="name">Palm Harbor</div>
                 <div className="address">2699 Green Valley, Highland lake, FL</div>
                 <div className="ammenities">
@@ -35,7 +44,7 @@ export default function Card() {
                     </span>
                     <span className="ammenity">
                         <img src={SquareMeterIcon} alt="ammenity" className="icon" />
-                        <span className="ammenity-name">5x7.5m<sup>2</sup></span>
+                        <span className="ammenity-name">5<span> x </span>7.5m<sup>2</sup></span>
                     </span>
                 </div>
             </div>
